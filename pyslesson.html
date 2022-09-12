@@ -8,14 +8,21 @@
 
 
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+    <py-env>
+- numpy
+- spacy
+    </py-env>
+
 </head>
+
 <body>
 <div id="output"></div>
 
     <py-script>
-    !python -m spacy download zh_core_web_sm\n
-    import spacy
+    import numpy
+    #import spacy
 
     name = "scott"
     print(name)
